@@ -29,7 +29,7 @@ public class Consumer {
         this.restTemplate = restTemplateBuilder.build();
     }
 
-    @KafkaListener(topics = "perfil", groupId = "group_id")
+    @KafkaListener(topics = "PerfilCarLog",  groupId = "group_id")
     public void consume(String message) {
  
         MensagemSlack mensagem = new MensagemSlack();
