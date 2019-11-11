@@ -1,0 +1,11 @@
+
+urlSlack: https://hooks.slack.com/services/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
+spring:
+    kafka:
+        consumer:
+            bootstrap-servers: localhost:9092
+            group-id: group_id
+            auto-offset-reset: earliest
+            key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+       
