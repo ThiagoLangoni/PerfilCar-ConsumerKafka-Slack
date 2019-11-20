@@ -1,9 +1,11 @@
 
-urlSlack: https://hooks.slack.com/services/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
+server:
+    port : 8081
+urlSlack: https://hooks.slack.com/services/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
 spring:
     kafka:
         consumer:
-            bootstrap-servers: localhost:9092
+            bootstrap-servers: 192.168.0.32:9092
             group-id: group_id
             auto-offset-reset: earliest
             key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
